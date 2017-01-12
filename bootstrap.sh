@@ -9,7 +9,7 @@ chown -R root:www /var/www
 chmod 2775 /var/www
 find /var/www -type d -exec chmod 2775 {} +
 find /var/www -type f -exec chmod 0664 {} +
-sudo yum install git
+yum install git
 git init /var/www/html .
 git remote add https://github.com/andrewpkbyu/cs_462_webserver.git
 git fetch origin
