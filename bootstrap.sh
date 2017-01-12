@@ -10,7 +10,8 @@ chmod 2775 /var/www
 find /var/www -type d -exec chmod 2775 {} +
 find /var/www -type f -exec chmod 0664 {} +
 yum install git
-git init /var/www/html .
+cd /var/www/html
+git init .
 git remote add https://github.com/andrewpkbyu/cs_462_webserver.git
 git fetch origin
 git checkout master
